@@ -11,6 +11,12 @@ angular.module('video-player')
     this.search = (query, results) => {
       this.service.search(query, results);
     };
+
+    this.enterPress = (event, query, result) => {
+      if (event.keyCode === 13) {
+        youTube.search(query, result);
+      }
+    };
   },
 
   templateUrl: 'src/templates/search.html'
