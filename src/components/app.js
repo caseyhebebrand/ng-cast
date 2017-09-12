@@ -12,7 +12,6 @@ angular.module('video-player')
     };
 
     this.searchResults = (videos) => {
-      console.log('searching');
       this.videos = videos;
       this.currentVideo = videos[0];      
     };
