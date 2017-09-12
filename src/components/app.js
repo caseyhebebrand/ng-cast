@@ -11,9 +11,12 @@ angular.module('video-player')
     };
 
     this.searchResults = () => {
-      //can now access youTube.search
-      // youTube.search(this.query, callback??)
       console.log('searching', this.query);
+      youTube.search(this.query, (videos) => {
+        this.videos = videos;
+        this.currentVideo = videos[0];
+      });
+      
     };
    
   }
