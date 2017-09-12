@@ -16,7 +16,7 @@ angular.module('video-player')
       callback(resultObj.data.items);
       
     }).catch(function(resultObj) {
-      console.log('error', data);
+      console.log('error');
     });
   }; 
 });
